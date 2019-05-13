@@ -1,0 +1,68 @@
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+th {
+  position: relative;
+}
+
+th:hover > .Btn-deleteColumn {
+  opacity: 1;
+}
+
+tr:hover > td > .Btn-deleteRow {
+  opacity: 1;
+}
+
+.Btn-addRow,
+.Btn-addColumn,
+.Btn-deleteRow,
+.Btn-deleteColumn {
+  height: 40px;
+}
+
+.Btn-addRow:hover,
+.Btn-addColumn:hover,
+.Btn-deleteRow:hover,
+.Btn-deleteColumn:hover {
+  cursor: pointer;
+}
+
+.Btn-addRow:hover .Icon-add,
+.Btn-addColumn:hover .Icon-add,
+.Btn-deleteRow:hover .Icon-delete,
+.Btn-deleteColumn:hover .Icon-delete {
+  fill: #5A52FF;
+}
+
+.Btn-deleteRow,
+.Btn-deleteColumn {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.Btn-deleteColumn {
+  left: 142px;
+  position: absolute;
+  top: 10px;
+}
+
+.Icon-add,
+.Icon-delete {
+  fill: #000000;
+  height: 12px;
+  padding: 3px;
+  transition: fill 200ms ease;
+  width: 12px;
+}
+
+.Icon-delete {
+  transform: rotate(45deg);
+}

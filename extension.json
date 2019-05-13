@@ -1,0 +1,8 @@
+{
+  "id": "marketing-table",
+  "name": "marketing-table",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": [
+    "Object"
+  ]
+}
